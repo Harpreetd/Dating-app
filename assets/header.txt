@@ -1,0 +1,14 @@
+document.write(`<header>
+      <a href="index.html">
+       <img src="/Assets/Images/logo.png">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About App</a></li>
+          <li><a href="./play.html">Play</a></li>
+          <li><a href="./createAccount.html">Create Account</a></li>
+           <li><a href="./login.html">Log in</a></li> 
+        </ul>
+      </nav>
+    </header>`)

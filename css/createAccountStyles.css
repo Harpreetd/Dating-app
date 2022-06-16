@@ -1,0 +1,39 @@
+/* CREATE NEW USER FORM */
+.form-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  background-color: var(--offWhite);
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+}
+.form-title {
+  padding: 10px 40px 0px;
+}
+input[type="date"] {
+  padding-right: 60px;
+}
+input[type="email"] {
+  width: 100%;
+  text-transform: lowercase;
+}
+select {
+  border: none;
+  border-bottom: 1px solid var(--pink);
+  background-color: var(--offWhite);
+  outline: none;
+  margin: 8px 0;
+  padding: 5px 0;
+  width: 50%;
+}
+.beside {
+  display: flex;
+  justify-content: space-evenly;
+}

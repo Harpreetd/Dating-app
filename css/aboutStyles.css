@@ -1,0 +1,22 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.about-text {
+  width: 50vw;
+  height: 90vh;
+  text-align: left;
+  padding: 20px 80px;
+}
+h2 {
+  color: var(--pink);
+  margin: 30px auto;
+}
+.hearts-image {
+  width: 50vw;
+  height: 80vh;
+  background-image: url(/assets/images/heart-sweets.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}

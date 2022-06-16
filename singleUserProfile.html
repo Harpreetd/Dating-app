@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FINT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/indexStyles.css" />
+    <link rel="stylesheet" href="/css/singleProfileStyles.css" />
+    <title>User Profile</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/header.txt"></script>
+    <div class="container">
+      <div class="about-info">
+        <h3>Name</h3>
+        <h3 id="user-name"></h3>
+        <p>Gender</p>
+        <p id="user-gender"></p>
+        <p>Age</p>
+        <p id="user-age"></p>
+        <p>City</p>
+        <p id="user-city"></p>
+        <p>Country</p>
+        <p id="user-country"></p>
+        <p>Email</p>
+        <p id="user-email"></p>
+        <p>Interest</p>
+        <p id="interests"></p>
+        <button id="go-back" class="secondaryBtn">Go Back</button>
+        <button id="message-btn" class="primaryBtn">Message</button>
+        <!-- MESSENGER -->
+        <section class="messenger" id="messenger">
+          <div class="close" id="closeBtn">
+            <i class="fa-solid fa-xmark icon"></i>
+          </div>
+          <div class="recipient-face">
+            <img class="img-circle" id="recipient-img" />
+          </div>
+          <div class="chat">
+            <div class="chat-title">
+              <h3 id="recipient-name"></h3>
+            </div>
+            <div class="messages">
+              <div class="messages-content"></div>
+            </div>
+            <div class="message-box">
+              <textarea
+                type="text"
+                class="message-input"
+                placeholder="Type message..."
+              >
+              </textarea>
+              <button class="sendMessageBtn" id="send-message">Send</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="profile-image">
+        <img id="user-image" alt="picture of this user" />
+      </div>
+    </div>
+    <script src="/js/singleUserProfile.js"></script>
+    <script type="text/javascript" src="/assets/footer.txt"></script>
+  </body>
+</html>

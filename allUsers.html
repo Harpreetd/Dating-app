@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/indexStyles.css" />
+    <link rel="stylesheet" href="/css/allUsersStyles.css" />
+    <title>Log in to your Profile</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/header.txt"></script>
+    <!-- FILTERING SECTION -->
+    <div class="bar-section">
+      <div class="searchbar-container">
+        <input
+          type="text"
+          id="searchbar"
+          placeholder="Search by Name/City/Country"
+          class="searchbar"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <button id="all" class="secondaryBtn">All</button>
+      <button
+        class="secondaryBtn"
+        value="male"
+        id="male"
+        onclick="genderFilter(this.value)"
+      >
+        Male
+      </button>
+      <button
+        class="secondaryBtn"
+        value="female"
+        id="female"
+        onclick="genderFilter(this.value)"
+      >
+        Female
+      </button>
+      <button class="secondaryBtn" value="liked" id="liked-users">Liked</button>
+      <!-- CURRENT USER'S PROFILE -->
+      <div class="new-profile" id="new-profile">
+        <div class="profile-popup" id="myForm">
+          <h1>Update Your Profile</h1>
+          <div class="info-container">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="original-first-name"
+              required
+            />
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="original-last-name"
+              required
+            />
+            <label for="city">City</label>
+            <input type="text" name="city" id="original-city" required />
+            <label for="country">Country</label>
+            <input type="text" name="country" id="original-country" required />
+            <div>
+              <p>
+                <input
+                  type="file"
+                  accept="image/*"
+                  name="image"
+                  id="file"
+                  onchange="loadFile(event)"
+                />
+              </p>
+              <p>Upload Image</p>
+            </div>
+            <div>
+              <label for="file" style="cursor: pointer">
+                <i class="fa-solid fa-camera"></i>
+              </label>
+              <img id="output" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="primaryBtn" id="save-updates">Save</button>
+            <button class="secondaryBtn" id="close-form">Close</button>
+            <button class="secondaryBtn" id="logOutBtn">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OTHER USER'S CARD -->
+    <div class="all-users-container">
+      <ul id="users-list"></ul>
+    </div>
+    <script type="text/javascript" src="/assets/footer.txt"></script>
+    <script src="/js/allUsers.js"></script>
+  </body>
+</html>

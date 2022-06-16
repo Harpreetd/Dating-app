@@ -1,0 +1,77 @@
+/* THE BAR WITH ALL FILTER CATEGORIES */
+.bar-section {
+  width: 100vw;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--opaque);
+}
+.new-profile {
+  height: 50px;
+  width: 50px;
+}
+.new-profile img {
+  height: 100%;
+  width: 100%;
+}
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: auto 10px;
+}
+.searchbar {
+  width: 25vw;
+  height: 32px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.searchbar:focus {
+  background-color: var(--white);
+}
+/* DISPLAY ALL USERS */
+.all-users-container {
+  width: 85vw;
+  min-height: 55vh;
+  margin: 50px auto;
+}
+/* FORM FOR UPDATING CURRENT USRE'S INFO */
+.profile-popup {
+  border-radius: 10px;
+  border: 2px solid var(--pink);
+  width: 40vw;
+  background: var(--offWhite);
+  position: absolute;
+  right: 20px;
+  margin: auto;
+  z-index: 10;
+  padding: 20px;
+  display: none;
+}
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: baseline;
+}
+input {
+  width: 100%;
+}
+/* OUTPUT OF UPLOADED IMAGE */
+#output {
+  height: 200px;
+  width: 100%;
+}
+#file {
+  display: none;
+}
+.buttons {
+  width: 100%;
+  padding: 0;
+}

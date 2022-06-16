@@ -1,0 +1,24 @@
+/* LOGIN FORM */
+form {
+  height: 60vh;
+  width: 30vw;
+  margin: 40px auto;
+  padding: 50px;
+  border: 3px solid var(--pink);
+  border-radius: 10px;
+  background-color: var(--offWhite);
+}
+.form-img {
+  position: relative;
+  top: -100px;
+  left: 170px;
+  width: 50%;
+  height: 150px;
+}
+.form-img img {
+  height: 100%;
+  width: 100%;
+}
+input {
+  width: 100%;
+}
